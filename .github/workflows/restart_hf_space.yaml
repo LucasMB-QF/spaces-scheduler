@@ -2,8 +2,8 @@ name: Restart Hugging Face Space
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # Runs every 30 minutes
-  workflow_dispatch:         # Allows manual run from GitHub UI
+    - cron: '0 */3 * * *'  # Runs every 3 hours, at minute 0
+  workflow_dispatch:       # Allows manual run from GitHub UI
 
 jobs:
   restart-space:
